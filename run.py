@@ -1,9 +1,3 @@
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
-    
 import random
 from words import words_index
 # imports random words to use for the secrect word.
@@ -173,8 +167,8 @@ def hangman_lives(lives):
         ______________ / /
                       | /
         ______________ /
-        """]
-        return stages[lives]
+        """
+    ]
+    return stages[lives]
     # A stick man in side of a sting and the stages of losing a live and what will be displayed also when a letter is lost that is in a loop.
-
     menu()
