@@ -1,3 +1,9 @@
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
+    
 import random
 from words import words_index
 # imports random words to use for the secrect word.
@@ -74,7 +80,7 @@ def end_game(outcome, word):
         print((f"{word} is correct, you have won!"))
         menu()
     else:
-        print(f"the word was {word}, you have lost"))
+        print((f"the word was {word}, you have lost"))
 # defined the the end of the game for outcome and word. if outcome is true then else this is false and the game has been lost. 
 def hangman_lives(lives):
     """
@@ -167,9 +173,8 @@ def hangman_lives(lives):
         ______________ / /
                       | /
         ______________ /
-        """
-    ]
-    return stages[lives]
+        """]
+        return stages[lives]
     # A stick man in side of a sting and the stages of losing a live and what will be displayed also when a letter is lost that is in a loop.
 
     menu()
